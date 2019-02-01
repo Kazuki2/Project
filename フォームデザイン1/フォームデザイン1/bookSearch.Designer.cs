@@ -83,6 +83,7 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSearch.Font = new System.Drawing.Font("MS UI Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSearch.Location = new System.Drawing.Point(348, 195);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -90,12 +91,13 @@
             this.btnSearch.Size = new System.Drawing.Size(416, 80);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "検索";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // bookSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1174, 671);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dataGridView1);
