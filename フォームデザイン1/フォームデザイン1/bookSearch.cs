@@ -16,5 +16,14 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var result = DataBase.GetBooksByTitle(txtTitle.Text);
+            foreach (var book in result)
+            {
+                dataGridView1.Rows.Add(book.Title,book.Actor);
+            }
+        }
     }
 }

@@ -36,45 +36,59 @@
             // 
             // btnBookRegist
             // 
+            this.btnBookRegist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBookRegist.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookRegist.Location = new System.Drawing.Point(12, 12);
             this.btnBookRegist.Name = "btnBookRegist";
-            this.btnBookRegist.Size = new System.Drawing.Size(272, 71);
+            this.btnBookRegist.Size = new System.Drawing.Size(366, 108);
             this.btnBookRegist.TabIndex = 0;
             this.btnBookRegist.Text = "書籍登録";
-            this.btnBookRegist.UseVisualStyleBackColor = true;
+            this.btnBookRegist.UseVisualStyleBackColor = false;
+            this.btnBookRegist.Click += new System.EventHandler(this.btnBookRegist_Click);
             // 
             // btnBookSearch
             // 
-            this.btnBookSearch.Location = new System.Drawing.Point(12, 89);
+            this.btnBookSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnBookSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookSearch.Location = new System.Drawing.Point(12, 126);
             this.btnBookSearch.Name = "btnBookSearch";
-            this.btnBookSearch.Size = new System.Drawing.Size(272, 71);
+            this.btnBookSearch.Size = new System.Drawing.Size(366, 108);
             this.btnBookSearch.TabIndex = 0;
             this.btnBookSearch.Text = "書籍検索";
-            this.btnBookSearch.UseVisualStyleBackColor = true;
+            this.btnBookSearch.UseVisualStyleBackColor = false;
+            this.btnBookSearch.Click += new System.EventHandler(this.btnBookSearch_Click);
             // 
             // btnUserRegist
             // 
-            this.btnUserRegist.Location = new System.Drawing.Point(12, 166);
+            this.btnUserRegist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnUserRegist.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserRegist.Location = new System.Drawing.Point(12, 240);
             this.btnUserRegist.Name = "btnUserRegist";
-            this.btnUserRegist.Size = new System.Drawing.Size(272, 71);
+            this.btnUserRegist.Size = new System.Drawing.Size(366, 108);
             this.btnUserRegist.TabIndex = 0;
             this.btnUserRegist.Text = "会員登録";
-            this.btnUserRegist.UseVisualStyleBackColor = true;
+            this.btnUserRegist.UseVisualStyleBackColor = false;
+            this.btnUserRegist.Click += new System.EventHandler(this.btnUserRegist_Click);
             // 
             // BtnRentReturn
             // 
-            this.BtnRentReturn.Location = new System.Drawing.Point(12, 243);
+            this.BtnRentReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnRentReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRentReturn.ForeColor = System.Drawing.Color.White;
+            this.BtnRentReturn.Location = new System.Drawing.Point(12, 354);
             this.BtnRentReturn.Name = "BtnRentReturn";
-            this.BtnRentReturn.Size = new System.Drawing.Size(272, 71);
+            this.BtnRentReturn.Size = new System.Drawing.Size(366, 108);
             this.BtnRentReturn.TabIndex = 0;
             this.BtnRentReturn.Text = "貸し/借り";
-            this.BtnRentReturn.UseVisualStyleBackColor = true;
+            this.BtnRentReturn.UseVisualStyleBackColor = false;
+            this.BtnRentReturn.Click += new System.EventHandler(this.BtnRentReturn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 324);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(390, 476);
             this.Controls.Add(this.BtnRentReturn);
             this.Controls.Add(this.btnUserRegist);
             this.Controls.Add(this.btnBookSearch);
@@ -82,6 +96,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "メニュー";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
