@@ -151,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(1051, 666);
+            this.ClientSize = new System.Drawing.Size(947, 627);
             this.Controls.Add(this.btnRegist);
             this.Controls.Add(this.dateIssue);
             this.Controls.Add(this.txtCom);
