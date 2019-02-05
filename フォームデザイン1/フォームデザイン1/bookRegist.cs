@@ -19,7 +19,12 @@ namespace フォームデザイン1
 
         private void btnRegist_Click(object sender, EventArgs e)
         {
-            
+            var book = new Book();
+            book.Title=txtTitle.Text;
+            book.Actor = txtActor.Text;
+            book.Company = txtCom.Text;
+            book.IssueDate = dateIssue.;
+            book.Isbn = txtIsbn.text;
         }
     }
 }

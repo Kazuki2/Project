@@ -98,7 +98,7 @@
             // 
             // rentalReturn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1060, 684);
@@ -109,6 +109,7 @@
             this.Controls.Add(this.label2);
             this.Name = "rentalReturn";
             this.Text = "rentalReturn";
+            this.Load += new System.EventHandler(this.rentalReturn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
