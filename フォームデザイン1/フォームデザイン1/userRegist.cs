@@ -16,5 +16,26 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
+        private void userRegist_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateBarth_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
     }
 }
