@@ -21,5 +21,11 @@ namespace フォームデザイン1
         {
 
         }
+
+        private void btnBookSearch_Click(object sender, EventArgs e)
+        {
+            bookSearch form2 = new bookSearch();
+            form2.Show();
+        }
     }
 }

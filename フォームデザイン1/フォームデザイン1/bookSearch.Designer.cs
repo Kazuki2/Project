@@ -34,6 +34,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.txtActor = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(219, 45);
+            this.label1.Location = new System.Drawing.Point(215, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 40);
             this.label1.TabIndex = 0;
@@ -53,7 +55,7 @@
             this.txtTitle.Font = new System.Drawing.Font("MS UI Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txtTitle.Location = new System.Drawing.Point(382, 43);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(231, 47);
+            this.txtTitle.Size = new System.Drawing.Size(230, 47);
             this.txtTitle.TabIndex = 1;
             this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
@@ -63,10 +65,10 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(328, 247);
+            this.dataGridView1.Location = new System.Drawing.Point(268, 309);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(213, 101);
+            this.dataGridView1.Size = new System.Drawing.Size(341, 101);
             this.dataGridView1.TabIndex = 3;
             // 
             // Column1
@@ -83,7 +85,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSearch.Font = new System.Drawing.Font("MS UI Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnSearch.Location = new System.Drawing.Point(268, 146);
+            this.btnSearch.Location = new System.Drawing.Point(268, 221);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(320, 60);
             this.btnSearch.TabIndex = 4;
@@ -93,7 +95,7 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(341, 385);
+            this.btnHome.Location = new System.Drawing.Point(334, 429);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(200, 64);
             this.btnHome.TabIndex = 5;
@@ -101,12 +103,32 @@
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // txtActor
+            // 
+            this.txtActor.Location = new System.Drawing.Point(382, 132);
+            this.txtActor.Multiline = true;
+            this.txtActor.Name = "txtActor";
+            this.txtActor.Size = new System.Drawing.Size(230, 47);
+            this.txtActor.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label2.Location = new System.Drawing.Point(219, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 40);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "著者名";
+            // 
             // bookSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(903, 523);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtActor);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dataGridView1);
@@ -125,10 +147,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnHome;
+        protected internal System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.TextBox txtActor;
+        private System.Windows.Forms.Label label2;
     }
 }

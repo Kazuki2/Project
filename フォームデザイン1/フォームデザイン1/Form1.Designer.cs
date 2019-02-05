@@ -51,6 +51,7 @@
             this.btnBookSearch.TabIndex = 0;
             this.btnBookSearch.Text = "書籍検索";
             this.btnBookSearch.UseVisualStyleBackColor = true;
+            this.btnBookSearch.Click += new System.EventHandler(this.btnBookSearch_Click);
             // 
             // btnUserRegist
             // 
@@ -79,7 +80,7 @@
             this.Controls.Add(this.btnUserRegist);
             this.Controls.Add(this.btnBookSearch);
             this.Controls.Add(this.btnBookRegist);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "メニュー";
             this.Load += new System.EventHandler(this.Form1_Load);
