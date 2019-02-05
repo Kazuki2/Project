@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace フォームデザイン1
 {
-    public partial class bookRegist : Form
+    public partial class rentalReturn3 : Form
     {
-        public bookRegist()
+        public rentalReturn3()
         {
             InitializeComponent();
         }
 
-        private void btnRegist_Click(object sender, EventArgs e)
+        private void btnRental_Click(object sender, EventArgs e)
         {
-            
         }
     }
 }

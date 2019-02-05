@@ -45,102 +45,108 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(249, 414);
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(285, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 36);
+            this.label1.Size = new System.Drawing.Size(154, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "ISBNコード";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(28, 142);
+            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label2.Location = new System.Drawing.Point(300, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 36);
+            this.label2.Size = new System.Drawing.Size(109, 33);
             this.label2.TabIndex = 0;
             this.label2.Text = "タイトル";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(28, 250);
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(298, 157);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 36);
+            this.label3.Size = new System.Drawing.Size(111, 33);
             this.label3.TabIndex = 0;
             this.label3.Text = "著者名";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(477, 250);
+            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label4.Location = new System.Drawing.Point(264, 234);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 36);
+            this.label4.Size = new System.Drawing.Size(175, 33);
             this.label4.TabIndex = 0;
             this.label4.Text = "発行年月日";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(477, 142);
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.Location = new System.Drawing.Point(275, 306);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 36);
+            this.label5.Size = new System.Drawing.Size(143, 33);
             this.label5.TabIndex = 0;
             this.label5.Text = "発行会社";
             // 
             // txtIsbn
             // 
-            this.txtIsbn.Font = new System.Drawing.Font("ＭＳ 明朝", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtIsbn.Location = new System.Drawing.Point(450, 408);
+            this.txtIsbn.Location = new System.Drawing.Point(480, 46);
+            this.txtIsbn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIsbn.Name = "txtIsbn";
-            this.txtIsbn.Size = new System.Drawing.Size(222, 47);
+            this.txtIsbn.Size = new System.Drawing.Size(287, 31);
             this.txtIsbn.TabIndex = 1;
             // 
             // txtTitle
             // 
-            this.txtTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtTitle.Location = new System.Drawing.Point(193, 139);
+            this.txtTitle.Location = new System.Drawing.Point(480, 100);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(278, 47);
+            this.txtTitle.Size = new System.Drawing.Size(287, 31);
             this.txtTitle.TabIndex = 1;
             // 
             // txtActor
             // 
-            this.txtActor.Font = new System.Drawing.Font("ＭＳ 明朝", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtActor.Location = new System.Drawing.Point(193, 244);
+            this.txtActor.Location = new System.Drawing.Point(480, 157);
+            this.txtActor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtActor.Name = "txtActor";
-            this.txtActor.Size = new System.Drawing.Size(278, 47);
+            this.txtActor.Size = new System.Drawing.Size(287, 31);
             this.txtActor.TabIndex = 1;
             // 
             // txtCom
             // 
-            this.txtCom.Font = new System.Drawing.Font("ＭＳ 明朝", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtCom.Location = new System.Drawing.Point(684, 139);
+            this.txtCom.Location = new System.Drawing.Point(491, 308);
+            this.txtCom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCom.Name = "txtCom";
-            this.txtCom.Size = new System.Drawing.Size(310, 47);
+            this.txtCom.Size = new System.Drawing.Size(287, 31);
             this.txtCom.TabIndex = 1;
             // 
             // dateIssue
             // 
-            this.dateIssue.Font = new System.Drawing.Font("ＭＳ 明朝", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dateIssue.Location = new System.Drawing.Point(684, 245);
+            this.dateIssue.Location = new System.Drawing.Point(491, 229);
+            this.dateIssue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateIssue.Name = "dateIssue";
-            this.dateIssue.Size = new System.Drawing.Size(310, 43);
+            this.dateIssue.Size = new System.Drawing.Size(287, 31);
             this.dateIssue.TabIndex = 2;
             // 
             // btnRegist
             // 
-            this.btnRegist.Font = new System.Drawing.Font("HG行書体", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnRegist.Location = new System.Drawing.Point(743, 382);
+            this.btnRegist.Location = new System.Drawing.Point(277, 473);
+            this.btnRegist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegist.Name = "btnRegist";
-            this.btnRegist.Size = new System.Drawing.Size(212, 95);
+            this.btnRegist.Size = new System.Drawing.Size(490, 40);
             this.btnRegist.TabIndex = 3;
             this.btnRegist.Text = "登録";
             this.btnRegist.UseVisualStyleBackColor = true;
+            this.btnRegist.Click += new System.EventHandler(this.btnRegist_Click);
             // 
             // button1
             // 
@@ -164,11 +170,9 @@
             // 
             // bookRegist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 517);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1051, 666);
             this.Controls.Add(this.btnRegist);
             this.Controls.Add(this.dateIssue);
             this.Controls.Add(this.txtCom);
@@ -180,6 +184,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "bookRegist";
             this.Text = "bookRegist";
             this.ResumeLayout(false);
