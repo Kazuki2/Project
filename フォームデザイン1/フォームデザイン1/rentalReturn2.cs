@@ -16,5 +16,15 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
+        private void btnRental_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

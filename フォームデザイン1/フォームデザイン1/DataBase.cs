@@ -28,15 +28,12 @@ namespace フォームデザイン1
         /// Memberの追加、Memberインスタンスを引数とします
         /// </summary>
         /// <param name="member">Memberインスタンス</param>
-        /// <returns>成功可否:bool</returns>
-        public static bool AddMember(Member member)
+        public static void AddMember(Member member)
         {
-            if (GetMemberByNumber(member.Number) == null)
-            {
-                _members.Add(member);
-                return true;
-            }
-            return false;
+            var random = new Random();
+            do {
+                member.Number = random.Next(10000, 99999);
+            } while (GetMemberByNumber(member.Number) != null);
         }
 
         /// <summary>
@@ -121,6 +118,32 @@ namespace フォームデザイン1
         }
 
         /// <summary>
+        /// 借りるときに使うメソッド
+        /// </summary>
+        /// <param name="book">借りる本</param>
+        /// <param name="member">会員</param>
+        /// <param name="rentalDate">借りる日</param>
+        /// <param name="returnDate">返却予定日</param>
+        public static void Rental(Book book,Member member,DateTime rentalDate,DateTime returnDate)
+        {
+            book.RenalDate = rentalDate;
+            book.ReturnDate = returnDate;
+            book.State = member.Number;
+        }
+
+        /// <summary>
+        /// 返すときに使うメソッド
+        /// </summary>
+        /// <param name="book">返す本</param>
+        /// <param name="member">会員</param>
+        public static void Return(Book book,Member member)
+        {
+            book.State = -1;
+            book.RenalDate = DateTime.MinValue;
+            book.ReturnDate = DateTime.MinValue;
+        }
+
+        /// <summary>
         /// データベースを読み込みます
         /// </summary>
         public static void Load()
@@ -166,6 +189,12 @@ namespace フォームデザイン1
         /// 本の発行日を参照します。設定もできます。DateTime型です。
         /// </summary>
         public DateTime IssueDate { get; set; }
+        /// <summary>
+        /// 借りていたら会員番号、そうでなければnull
+        /// </summary>
+        public int State { get; set; }
+        public DateTime RenalDate { get; set; }
+        public DateTime ReturnDate { get; set; }
     }
 
     [Serializable]

@@ -16,5 +16,10 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
+        private void rentalReturn_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
