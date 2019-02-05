@@ -34,8 +34,20 @@ namespace フォームデザイン1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+            this.Close();
+
+        }
+
+        private void btnRegist_Click(object sender, EventArgs e)
+        {
+            var member = new Member();
+            member.Address = txtAddress.Text;
+            member.Email = txtEmail.Text;
+            member.BarthDay = dateBarth.Value;
+            member.Name = txtName.Text;
+            member.Tel = txtTel.Text;
+            DataBase.AddMember(member);
+            
         }
     }
 }
