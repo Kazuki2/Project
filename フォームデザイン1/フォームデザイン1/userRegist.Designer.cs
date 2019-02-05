@@ -138,12 +138,13 @@
             // btnRegist
             // 
             this.btnRegist.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-            this.btnRegist.Location = new System.Drawing.Point(80, 464);
+            this.btnRegist.Location = new System.Drawing.Point(40, 488);
             this.btnRegist.Name = "btnRegist";
-            this.btnRegist.Size = new System.Drawing.Size(344, 56);
+            this.btnRegist.Size = new System.Drawing.Size(280, 56);
             this.btnRegist.TabIndex = 3;
             this.btnRegist.Text = "登録";
             this.btnRegist.UseVisualStyleBackColor = true;
+            this.btnRegist.Click += new System.EventHandler(this.btnRegist_Click);
             // 
             // label6
             // 
@@ -168,9 +169,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.button1.Location = new System.Drawing.Point(336, 24);
+            this.button1.Location = new System.Drawing.Point(352, 488);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 40);
+            this.button1.Size = new System.Drawing.Size(112, 56);
             this.button1.TabIndex = 6;
             this.button1.Text = "戻る";
             this.button1.UseVisualStyleBackColor = true;

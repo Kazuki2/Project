@@ -10,20 +10,16 @@ using System.Windows.Forms;
 
 namespace フォームデザイン1
 {
-    public partial class bookSearch : Form
+    public partial class rentalReturn3 : Form
     {
-        public bookSearch()
+        public rentalReturn3()
         {
             InitializeComponent();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        internal static void Show(object _)
         {
-            var result = DataBase.GetBooksByTitle(txtTitle.Text);
-            foreach (var book in result)
-            {
-                dataGridView1.Rows.Add(book.Title,book.Actor);
-            }
+            throw new NotImplementedException();
         }
     }
 }

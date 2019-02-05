@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace フォームデザイン1
@@ -19,13 +12,36 @@ namespace フォームデザイン1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DataBase.Load();
+        }
 
+        private void btnBookRegist_Click(object sender, EventArgs e)
+        {
+            var form = new bookRegist();
+            form.Show();
         }
 
         private void btnBookSearch_Click(object sender, EventArgs e)
         {
-            bookSearch form2 = new bookSearch();
-            form2.Show();
+            var form = new bookSearch();
+            form.Show();
+        }
+
+        private void btnUserRegist_Click(object sender, EventArgs e)
+        {
+            var form = new userRegist();
+            form.Show();
+        }
+
+        private void BtnRentReturn_Click(object sender, EventArgs e)
+        {
+            var form = new rentalReturn2();
+            form.Show();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DataBase.Save();
         }
     }
 }
