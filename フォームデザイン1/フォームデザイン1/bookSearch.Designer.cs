@@ -39,17 +39,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Location = new System.Drawing.Point(468, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "タイトル";
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(96, 12);
+            this.txtTitle.Location = new System.Drawing.Point(560, 124);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(199, 26);
+            this.txtTitle.Size = new System.Drawing.Size(221, 25);
             this.txtTitle.TabIndex = 1;
             // 
             // dataGridView1
@@ -58,10 +58,10 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmTitle,
             this.clmActor});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(471, 219);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(279, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(310, 135);
             this.dataGridView1.TabIndex = 3;
             // 
             // clmTitle
@@ -76,9 +76,9 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(16, 44);
+            this.btnSearch.Location = new System.Drawing.Point(471, 408);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(279, 31);
+            this.btnSearch.Size = new System.Drawing.Size(310, 28);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "検索";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // 
             // bookSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 242);
+            this.ClientSize = new System.Drawing.Size(1209, 568);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtTitle);
