@@ -141,6 +141,7 @@
             this.btnRegist.TabIndex = 3;
             this.btnRegist.Text = "登録";
             this.btnRegist.UseVisualStyleBackColor = true;
+            this.btnRegist.Click += new System.EventHandler(this.btnRegist_Click);
             // 
             // button1
             // 
