@@ -105,6 +105,24 @@ namespace フォームデザイン1
         }
 
         /// <summary>
+        /// デバッグ用です。気にしないでください
+        /// </summary>
+        /// <returns>JSONなMembers</returns>
+        public static string MembersToString()
+        {
+            using (var ms = new MemoryStream())
+            using (var sr = new StreamReader(ms)) {
+                var serializer = new DataContractJsonSerializer(typeof(List<Member>));
+                serializer.WriteObject(ms, _members);
+                ms.Position = 0;
+
+                var json = sr.ReadToEnd();
+
+                return json;
+            }
+        }
+
+        /// <summary>
         /// データベースを保存します
         /// </summary>
         public static void Save()
