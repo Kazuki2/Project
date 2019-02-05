@@ -16,5 +16,22 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
+        private void btnRental_Click(object sender, EventArgs e)
+        {
+            rentalReturn2 rentalReturn2 = new rentalReturn2();
+            ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            rentalReturn3 rentalReturn3 = new rentalReturn3();
+            ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

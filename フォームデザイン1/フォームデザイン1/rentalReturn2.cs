@@ -16,5 +16,6 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
     }
 }

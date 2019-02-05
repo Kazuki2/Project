@@ -16,5 +16,10 @@ namespace フォームデザイン1
         {
             InitializeComponent();
         }
+
+        internal static void Show(object _)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

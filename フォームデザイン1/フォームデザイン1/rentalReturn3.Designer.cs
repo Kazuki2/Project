@@ -114,7 +114,7 @@
             this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(40, 560);
+            this.button1.Location = new System.Drawing.Point(16, 584);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 80);
             this.button1.TabIndex = 12;
