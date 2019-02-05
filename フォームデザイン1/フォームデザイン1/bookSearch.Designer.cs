@@ -30,8 +30,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmActor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,23 +56,23 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
+            this.clmTitle,
+            this.clmActor});
             this.dataGridView1.Location = new System.Drawing.Point(16, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(279, 150);
             this.dataGridView1.TabIndex = 3;
             // 
-            // Column1
+            // clmTitle
             // 
-            this.Column1.HeaderText = "タイトル";
-            this.Column1.Name = "Column1";
+            this.clmTitle.HeaderText = "タイトル";
+            this.clmTitle.Name = "clmTitle";
             // 
-            // Column2
+            // clmActor
             // 
-            this.Column2.HeaderText = "著者名";
-            this.Column2.Name = "Column2";
+            this.clmActor.HeaderText = "著者名";
+            this.clmActor.Name = "clmActor";
             // 
             // btnSearch
             // 
@@ -82,6 +82,7 @@
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "検索";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // bookSearch
             // 
@@ -105,8 +106,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmActor;
     }
 }

@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace フォームデザイン1
 {
-    public partial class rentalReturn : Form
+    public partial class rentalReturn2 : Form
     {
-        public rentalReturn()
+        public rentalReturn2()
         {
             InitializeComponent();
         }
 
-        private void rentalReturn_Load(object sender, EventArgs e)
+        private void btnRental_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
         {
 
         }

@@ -26,10 +26,5 @@ namespace フォームデザイン1
             book.IssueDate = dateIssue.;
             book.Isbn = txtIsbn.text;
         }
-
-        class book : public Book
-            {
-            };
-            book Title;
     }
 }
