@@ -31,5 +31,16 @@ namespace フォームデザイン1
         {
 
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            End Sub
+            End Class
+        }
     }
 }
