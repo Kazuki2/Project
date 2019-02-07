@@ -12,6 +12,8 @@ namespace フォームデザイン1
 {
     public partial class bookSearch : Form
     {
+        private DataTable table;
+
         public bookSearch()
         {
             InitializeComponent();
@@ -19,6 +21,9 @@ namespace フォームデザイン1
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            DataRow[] dRows = table.AsEnumerable()
+               .Where(row => row.Field<string>("タイトル") == txtTitle.Text).ToArray();
+
             var result = DataBase.GetBooksByTitle(txtTitle.Text);
             foreach (var book in result)
             {
