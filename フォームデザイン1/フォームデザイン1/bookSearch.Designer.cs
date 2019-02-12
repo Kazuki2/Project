@@ -100,6 +100,7 @@
             this.Controls.Add(this.label1);
             this.Name = "bookSearch";
             this.Text = "bookSearch";
+            this.Load += new System.EventHandler(this.bookSearch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

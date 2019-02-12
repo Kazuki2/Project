@@ -109,7 +109,7 @@
             this.Controls.Add(this.label2);
             this.Name = "rentalReturn";
             this.Text = "rentalReturn";
-            this.Load += new System.EventHandler(this.rentalReturn_Load);
+            //this.Load += new System.EventHandler(this.rentalReturn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

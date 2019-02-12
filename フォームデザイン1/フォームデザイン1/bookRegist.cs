@@ -24,7 +24,7 @@ namespace フォームデザイン1
             book.Actor = txtActor.Text;
             book.Company = txtCom.Text;
             book.IssueDate = dateIssue.Value;
-            book.Isbn = txtIsbn.Text;
+            //book.Isbn = txtIsbn.Text;
         }
     }
 }

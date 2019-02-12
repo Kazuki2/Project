@@ -108,7 +108,7 @@
             this.btnRental.TabIndex = 11;
             this.btnRental.Text = "返却";
             this.btnRental.UseVisualStyleBackColor = false;
-            this.btnRental.Click += new System.EventHandler(this.btnRental_Click);
+            //this.btnRental.Click += new System.EventHandler(this.btnRental_Click);
             // 
             // button1
             // 
