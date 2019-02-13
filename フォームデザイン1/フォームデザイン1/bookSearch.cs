@@ -12,10 +12,14 @@ namespace フォームデザイン1
 {
     public partial class bookSearch : Form
     {
+        private DataTable table;
+
+
         public bookSearch()
         {
             InitializeComponent();
         }
+
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -25,5 +29,12 @@ namespace フォームデザイン1
                 dataGridView1.Rows.Add(book.Title,book.Actor);
             }
         }
+
+        private void bookSearch_Load(object sender, EventArgs e)
+        {
+            
+        }
+     
+
     }
 }
