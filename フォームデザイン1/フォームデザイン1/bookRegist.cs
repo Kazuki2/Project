@@ -28,5 +28,10 @@ namespace フォームデザイン1
             DataBase.AddBook(book);
             MessageBox.Show(DataBase.BooksToString());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
