@@ -23,44 +23,18 @@ namespace フォームデザイン1
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            DataRow[] dRows = table.AsEnumerable()
-          .Where(row => row.Field<string>("タイトル") == txtTitle.Text).ToArray();
-
             var result = DataBase.GetBooksByTitle(txtTitle.Text);
-
-            DataTable sub = new DataTable("sub");
-
-
             foreach (var book in result)
             {
                 dataGridView1.Rows.Add(book.Title,book.Actor);
             }
-
-            foreach (var row in dRows)
-            {
-                table.Rows.Add(row[0], row[1]);
-            }
-
-            dataGridView1.DataSource = sub;
         }
 
         private void bookSearch_Load(object sender, EventArgs e)
         {
-            table = new DataTable("Table");
-
-            table.Columns.Add("タイトル");
-            table.Columns.Add("著者");
-
-            table.Rows.Add("坊ちゃん", "夏目漱石");
-            table.Rows.Add("こころ", "夏目漱石");
-            table.Rows.Add("吾輩は猫である", "夏目漱石");
-            table.Rows.Add("舞姫", "森鴎外");
-            table.Rows.Add("羅生門", "芥川龍之介");
-            table.Rows.Add("河童", "芥川龍之介");
-            table.Rows.Add("人間失格", "太宰治");
-            table.Rows.Add("雪国", "川端康成");
-
-            dataGridView1.DataSource = table;
+            
         }
+     
+
     }
 }
