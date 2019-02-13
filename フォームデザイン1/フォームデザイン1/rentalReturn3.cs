@@ -17,8 +17,9 @@ namespace フォームデザイン1
             InitializeComponent();
         }
 
-        private void btnRental_Click(object sender, EventArgs e)
+        internal static void Show(object _)
         {
+            throw new NotImplementedException();
         }
     }
 }

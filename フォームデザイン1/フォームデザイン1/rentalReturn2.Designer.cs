@@ -29,95 +29,97 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.btnRental = new System.Windows.Forms.Button();
-            this.btnReturn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(266, 18);
+            this.label2.Location = new System.Drawing.Point(408, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(474, 97);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "貸出/返却";
-            // 
-            // btnRental
-            // 
-            this.btnRental.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnRental.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRental.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnRental.ForeColor = System.Drawing.Color.Black;
-            this.btnRental.Location = new System.Drawing.Point(94, 302);
-            this.btnRental.Name = "btnRental";
-            this.btnRental.Size = new System.Drawing.Size(295, 213);
-            this.btnRental.TabIndex = 6;
-            this.btnRental.Text = "貸出";
-            this.btnRental.UseVisualStyleBackColor = false;
-            this.btnRental.Click += new System.EventHandler(this.btnRental_Click);
-            // 
-            // btnReturn
-            // 
-            this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReturn.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnReturn.Location = new System.Drawing.Point(540, 302);
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(295, 213);
-            this.btnReturn.TabIndex = 7;
-            this.btnReturn.Text = "返却";
-            this.btnReturn.UseVisualStyleBackColor = false;
-            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            this.label2.Size = new System.Drawing.Size(234, 97);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "貸出";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(266, 187);
+            this.label4.Location = new System.Drawing.Point(48, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(474, 36);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "下記のボタンより選択してください";
+            this.label4.Size = new System.Drawing.Size(980, 36);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "ISBNコードと会員番号を入力し、貸出日と返却日を指定してください";
             // 
-            // button1
+            // label1
             // 
-            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(36, 613);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 124);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "戻る";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(64, 328);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(231, 52);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "会員番号";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(64, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(249, 52);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "ISBNコード";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.Location = new System.Drawing.Point(64, 528);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(249, 52);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "ISBNコード";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label6.Location = new System.Drawing.Point(64, 432);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 52);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "貸出日";
             // 
             // rentalReturn2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(954, 760);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1060, 684);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.btnRental);
             this.Controls.Add(this.label2);
             this.Name = "rentalReturn2";
             this.Text = "rentalReturn2";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
+ 
 
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnRental;
-        private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

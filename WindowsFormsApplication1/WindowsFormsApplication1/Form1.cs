@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace フォームデザイン1
+namespace WindowsFormsApplication1
 {
-    public partial class rental: Form
+    public partial class Form1 : Form
     {
-        public rental()
+        public Form1()
         {
             InitializeComponent();
         }

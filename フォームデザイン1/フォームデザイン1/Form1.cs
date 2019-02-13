@@ -35,7 +35,7 @@ namespace フォームデザイン1
 
         private void BtnRentReturn_Click(object sender, EventArgs e)
         {
-            var form = new rentalReturn();
+            var form = new rentalReturn2();
             form.Show();
         }
 
