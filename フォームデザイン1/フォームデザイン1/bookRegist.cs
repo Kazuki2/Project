@@ -23,8 +23,8 @@ namespace フォームデザイン1
             book.Title=txtTitle.Text;
             book.Actor = txtActor.Text;
             book.Company = txtCom.Text;
-            book.IssueDate = dateIssue.;
-            book.Isbn = txtIsbn.text;
+            book.IssueDate = dateIssue.Value;
+            //book.Isbn = txtIsbn.Text;
         }
     }
 }

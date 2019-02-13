@@ -110,6 +110,7 @@
             this.Controls.Add(this.label2);
             this.Name = "rentalReturn2";
             this.Text = "rentalReturn2";
+        }
  
 
         #endregion
