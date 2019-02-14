@@ -46,8 +46,8 @@ namespace フォームデザイン1
             member.BarthDay = dateBarth.Value;
             member.Name = txtName.Text;
             member.Tel = txtTel.Text;
-            DataBase.AddMember(member);
-            
+            MessageBox.Show("会員番号："+DataBase.AddMember(member).ToString());
+            //DataBase.AddMember(member);
         }
     }
 }

@@ -29,12 +29,13 @@ namespace フォームデザイン1
         /// Memberの追加、Memberインスタンスを引数とします
         /// </summary>
         /// <param name="member">Memberインスタンス</param>
-        public static void AddMember(Member member)
+        public static int AddMember(Member member)
         {
             var random = new Random();
             do {
                 member.Number = random.Next(10000, 99999);
             } while (GetMemberByNumber(member.Number) != null);
+            return member.Number;
         }
 
         /// <summary>
