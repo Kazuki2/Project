@@ -76,7 +76,7 @@ namespace フォームデザイン1
         /// </summary>
         /// <param name="isbn"></param>
         /// <returns></returns>
-        public static Book GetBookByIsbn(int isbn)
+        public static Book GetBookByIsbn(string isbn)
         {
             foreach (var book in _books)
             {
@@ -192,7 +192,7 @@ namespace フォームデザイン1
         /// <summary>
         /// 本のISBNコードを参照します。設定もできます。
         /// </summary>
-        public int Isbn { get; set; }
+        public string Isbn { get; set; }
         /// <summary>
         /// 本のタイトルを参照します。設定もできます。
         /// </summary>
