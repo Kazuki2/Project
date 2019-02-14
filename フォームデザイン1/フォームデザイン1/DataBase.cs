@@ -145,9 +145,10 @@ namespace フォームデザイン1
         /// <param name="returnDate">返却予定日</param>
         public static void Rental(Book book,Member member,DateTime rentalDate,DateTime returnDate)
         {
-            book.RenalDate = rentalDate;
-            book.ReturnDate = returnDate;
-            book.State = member.Number;
+            //コメントアウト
+            //book.RenalDate = rentalDate;
+            //book.ReturnDate = returnDate;
+            //book.State = member.Number;
         }
 
         /// <summary>

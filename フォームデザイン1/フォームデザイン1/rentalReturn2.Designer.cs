@@ -28,97 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labRental = new System.Windows.Forms.Label();
+            this.labBunn = new System.Windows.Forms.Label();
+            this.labIsbn = new System.Windows.Forms.Label();
+            this.labNumber = new System.Windows.Forms.Label();
+            this.labRentaldate = new System.Windows.Forms.Label();
+            this.labReturndate = new System.Windows.Forms.Label();
+            this.txtIsbn = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
+            this.btnRental = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.dateRental = new System.Windows.Forms.DateTimePicker();
+            this.dateRettime = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // label2
+            // labRental
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(408, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 97);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "貸出";
+            this.labRental.AutoSize = true;
+            this.labRental.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labRental.Location = new System.Drawing.Point(440, 16);
+            this.labRental.Name = "labRental";
+            this.labRental.Size = new System.Drawing.Size(234, 97);
+            this.labRental.TabIndex = 0;
+            this.labRental.Text = "貸出";
             // 
-            // label4
+            // labBunn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(48, 144);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(980, 36);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "ISBNコードと会員番号を入力し、貸出日と返却日を指定してください";
+            this.labBunn.AutoSize = true;
+            this.labBunn.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labBunn.Location = new System.Drawing.Point(40, 136);
+            this.labBunn.Name = "labBunn";
+            this.labBunn.Size = new System.Drawing.Size(981, 36);
+            this.labBunn.TabIndex = 1;
+            this.labBunn.Text = "ISBNコード、会員番号を入力し、貸出日と返却日を選択してください";
+            this.labBunn.Click += new System.EventHandler(this.labBunn_Click);
             // 
-            // label1
+            // labIsbn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(64, 328);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 52);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "会員番号";
+            this.labIsbn.AutoSize = true;
+            this.labIsbn.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labIsbn.Location = new System.Drawing.Point(208, 206);
+            this.labIsbn.Name = "labIsbn";
+            this.labIsbn.Size = new System.Drawing.Size(249, 52);
+            this.labIsbn.TabIndex = 2;
+            this.labIsbn.Text = "ISBNコード";
             // 
-            // label3
+            // labNumber
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(64, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 52);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "ISBNコード";
+            this.labNumber.AutoSize = true;
+            this.labNumber.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labNumber.Location = new System.Drawing.Point(208, 288);
+            this.labNumber.Name = "labNumber";
+            this.labNumber.Size = new System.Drawing.Size(231, 52);
+            this.labNumber.TabIndex = 3;
+            this.labNumber.Text = "会員番号";
             // 
-            // label5
+            // labRentaldate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(64, 528);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(249, 52);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "ISBNコード";
+            this.labRentaldate.AutoSize = true;
+            this.labRentaldate.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labRentaldate.Location = new System.Drawing.Point(208, 370);
+            this.labRentaldate.Name = "labRentaldate";
+            this.labRentaldate.Size = new System.Drawing.Size(179, 52);
+            this.labRentaldate.TabIndex = 4;
+            this.labRentaldate.Text = "貸出日";
             // 
-            // label6
+            // labReturndate
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(64, 432);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 52);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "貸出日";
+            this.labReturndate.AutoSize = true;
+            this.labReturndate.Font = new System.Drawing.Font("MS UI Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labReturndate.Location = new System.Drawing.Point(208, 454);
+            this.labReturndate.Name = "labReturndate";
+            this.labReturndate.Size = new System.Drawing.Size(283, 52);
+            this.labReturndate.TabIndex = 5;
+            this.labReturndate.Text = "返却予定日";
+            // 
+            // txtIsbn
+            // 
+            this.txtIsbn.Font = new System.Drawing.Font("MS UI Gothic", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtIsbn.Location = new System.Drawing.Point(640, 216);
+            this.txtIsbn.Name = "txtIsbn";
+            this.txtIsbn.Size = new System.Drawing.Size(256, 51);
+            this.txtIsbn.TabIndex = 6;
+            this.txtIsbn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtNumber
+            // 
+            this.txtNumber.Font = new System.Drawing.Font("MS UI Gothic", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtNumber.Location = new System.Drawing.Point(640, 298);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(256, 51);
+            this.txtNumber.TabIndex = 7;
+            this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // btnRental
+            // 
+            this.btnRental.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnRental.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnRental.Location = new System.Drawing.Point(424, 560);
+            this.btnRental.Name = "btnRental";
+            this.btnRental.Size = new System.Drawing.Size(256, 112);
+            this.btnRental.TabIndex = 10;
+            this.btnRental.Text = "貸出";
+            this.btnRental.UseVisualStyleBackColor = false;
+            this.btnRental.Click += new System.EventHandler(this.btnRental_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBack.Font = new System.Drawing.Font("MS UI Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnBack.Location = new System.Drawing.Point(56, 576);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(168, 80);
+            this.btnBack.TabIndex = 11;
+            this.btnBack.Text = "戻る";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // dateRental
+            // 
+            this.dateRental.Location = new System.Drawing.Point(640, 392);
+            this.dateRental.Name = "dateRental";
+            this.dateRental.Size = new System.Drawing.Size(200, 25);
+            this.dateRental.TabIndex = 12;
+            // 
+            // dateRettime
+            // 
+            this.dateRettime.Location = new System.Drawing.Point(640, 472);
+            this.dateRettime.Name = "dateRettime";
+            this.dateRettime.Size = new System.Drawing.Size(200, 25);
+            this.dateRettime.TabIndex = 13;
             // 
             // rentalReturn2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1060, 684);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1160, 684);
+            this.Controls.Add(this.dateRettime);
+            this.Controls.Add(this.dateRental);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnRental);
+            this.Controls.Add(this.txtNumber);
+            this.Controls.Add(this.txtIsbn);
+            this.Controls.Add(this.labReturndate);
+            this.Controls.Add(this.labRentaldate);
+            this.Controls.Add(this.labNumber);
+            this.Controls.Add(this.labIsbn);
+            this.Controls.Add(this.labBunn);
+            this.Controls.Add(this.labRental);
             this.Name = "rentalReturn2";
             this.Text = "rentalReturn2";
- 
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labRental;
+        private System.Windows.Forms.Label labBunn;
+        private System.Windows.Forms.Label labIsbn;
+        private System.Windows.Forms.Label labNumber;
+        private System.Windows.Forms.Label labRentaldate;
+        private System.Windows.Forms.Label labReturndate;
+        private System.Windows.Forms.TextBox txtIsbn;
+        private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.Button btnRental;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.DateTimePicker dateRental;
+        private System.Windows.Forms.DateTimePicker dateRettime;
     }
 }

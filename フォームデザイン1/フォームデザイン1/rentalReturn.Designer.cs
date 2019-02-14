@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.rentRet = new System.Windows.Forms.Label();
             this.btnRental = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.labBun = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label2
+            // rentRet
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(272, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(474, 97);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "貸出/返却";
+            this.rentRet.AutoSize = true;
+            this.rentRet.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.rentRet.Location = new System.Drawing.Point(384, 24);
+            this.rentRet.Name = "rentRet";
+            this.rentRet.Size = new System.Drawing.Size(411, 97);
+            this.rentRet.TabIndex = 6;
+            this.rentRet.Text = "貸し/借り";
             // 
             // btnRental
             // 
@@ -51,65 +51,64 @@
             this.btnRental.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRental.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnRental.ForeColor = System.Drawing.Color.Black;
-            this.btnRental.Location = new System.Drawing.Point(64, 256);
+            this.btnRental.Location = new System.Drawing.Point(88, 240);
             this.btnRental.Name = "btnRental";
-            this.btnRental.Size = new System.Drawing.Size(344, 208);
+            this.btnRental.Size = new System.Drawing.Size(382, 187);
             this.btnRental.TabIndex = 12;
             this.btnRental.Text = "貸出";
             this.btnRental.UseVisualStyleBackColor = false;
             this.btnRental.Click += new System.EventHandler(this.btnRental_Click);
             // 
-            // button1
+            // btnReturn
             // 
-            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(624, 256);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(344, 208);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "返却";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReturn.Font = new System.Drawing.Font("MS UI Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnReturn.ForeColor = System.Drawing.Color.Black;
+            this.btnReturn.Location = new System.Drawing.Point(696, 240);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(382, 187);
+            this.btnReturn.TabIndex = 13;
+            this.btnReturn.Text = "返却";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click_1);
             // 
-            // button2
+            // btnBack
             // 
-            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(48, 576);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 80);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "戻る";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnBack.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Font = new System.Drawing.Font("MS UI Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnBack.Location = new System.Drawing.Point(472, 520);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(227, 122);
+            this.btnBack.TabIndex = 22;
+            this.btnBack.Text = "戻る";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
+            // labBun
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(288, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(474, 36);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "下記のボタンより選択してください";
+            this.labBun.AutoSize = true;
+            this.labBun.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labBun.Location = new System.Drawing.Point(352, 160);
+            this.labBun.Name = "labBun";
+            this.labBun.Size = new System.Drawing.Size(474, 36);
+            this.labBun.TabIndex = 23;
+            this.labBun.Text = "下記のボタンより選択してください";
             // 
             // rentalReturn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1060, 684);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1160, 684);
+            this.Controls.Add(this.labBun);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnRental);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.rentRet);
             this.Name = "rentalReturn";
             this.Text = "rentalReturn";
-            this.Load += new System.EventHandler(this.rentalReturn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,10 +116,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label rentRet;
         private System.Windows.Forms.Button btnRental;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label labBun;
     }
 }
